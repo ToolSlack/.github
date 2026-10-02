@@ -1,18 +1,18 @@
 # ToolSlack: Exploiting Tool Execution Windows for Efficient LLM Agent Serving
 
-<p align="center"><img src="https://github.com/ToolSlack/ToolSlack/blob/HEAD/assets/toolslack-logo.png?raw=true" width="520" alt="ToolSlack"></p>
+<p align="center"><img src="https://github.com/ToolSlack/code/blob/HEAD/assets/toolslack-logo.png?raw=true" width="520" alt="ToolSlack"></p>
 
 ToolSlack schedules agent memory and exact-prefix KV preparation during real tool
 execution. The anonymous artifact includes the dense Qwen3-8B / LangGraph / LangMem
 implementation, CPU correctness checks, and a native GPU benchmark workflow.
 
-[Code and reproduction instructions](https://github.com/ToolSlack/ToolSlack)
+[Code and reproduction instructions](https://github.com/ToolSlack/code)
 
 ## Quick start
 
 ```sh
-git clone https://github.com/ToolSlack/ToolSlack.git
-cd ToolSlack
+git clone https://github.com/ToolSlack/code.git
+cd code
 ./run.sh cpu
 ```
 
@@ -21,7 +21,7 @@ Linux or macOS. Python 3.9 or newer is required to start it; no API key, model
 weights, CUDA installation, or GPU allocation is needed.
 
 For the native GPU workflow, first read the
-[hardware and reproduction prerequisites](https://github.com/ToolSlack/ToolSlack#one-command-gpu-smoke-and-benchmark).
+[hardware and reproduction prerequisites](https://github.com/ToolSlack/code#one-command-gpu-smoke-and-benchmark).
 Use Linux x86_64 with one independently reserved, empty GPU, and replace `0` with
 its physical `nvidia-smi` index:
 
@@ -33,4 +33,4 @@ its physical `nvidia-smi` index:
 CPU validation does not establish GPU performance. Fresh native-engine
 installation, GPU smoke, native DMA correctness, and paper performance
 reproduction remain unverified; see the
-[validation status and scope](https://github.com/ToolSlack/ToolSlack#reproduction-scope-and-interpretation).
+[validation status and scope](https://github.com/ToolSlack/code#reproduction-scope-and-interpretation).
